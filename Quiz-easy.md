@@ -27,7 +27,7 @@ layout: default
   </div>
 
   <!-- Question 2 -->
-  <div class="question-step active">
+  <div class="question-step">
     <h3>Question 2: What are the items that you get when first spawning?</h3>
     
     <form class="quiz-form">
