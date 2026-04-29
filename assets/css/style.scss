@@ -47,6 +47,25 @@
   text-decoration: none;
 }
 
+.quiz {
+  border: 1px solid #473730;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.checks {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.submit {
+  background: #473730;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 .easy {
   background: transparent url('../../easy.png')
 } 
