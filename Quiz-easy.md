@@ -46,7 +46,7 @@ layout: default
     
     <button type="button" class="submit" onclick="checkAnswer(this)">Check Answer</button>
     
-    <button onclick="nextQuestion(2)" class="next-btn submit">Next</button>
+    <button onclick="nextQuestion(2)" class="next-btn submit" disabled>Next</button>
   </div>
 
   <!-- Result Screen -->
