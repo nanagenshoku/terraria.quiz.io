@@ -38,6 +38,9 @@
 
 .level-card:hover {
   transform: scale(1.05);
+  background-size: 120%; /* Scale up slightly so there is "room" to move */
+  animation: floatBg 4s ease-in-out infinite;
+
 }
 
 .level-link {
@@ -101,6 +104,17 @@
     transform: translateY(0);
   }
 }
+
+@keyframes floatBg {
+  0% {
+    background-position: center 50%;
+  }
+  50% {
+    background-position: center 40%; /* Moves the image up slightly */
+  }
+  100% {
+    background-position: center 50%;
+  }
 
 .easy {
   background: transparent url('../../easy.png')
