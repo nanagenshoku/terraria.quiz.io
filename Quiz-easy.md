@@ -92,15 +92,23 @@ function checkAnswer(btn) {
   }
 }
 
-
 function nextQuestion(currentStep) {
   const steps = document.querySelectorAll('.question-step');
-  steps[currentStep - 1].classList.remove('active');
-  
-  if (steps[currentStep]) {
-    steps[currentStep].classList.add('active');
-  }
+  const current = steps[currentStep - 1];
+  const next = steps[currentStep];
+
+  // Optional: Add a 'fade-out' class first
+  current.style.opacity = '0';
+  current.style.transition = '0.3s';
+
+  setTimeout(() => {
+    current.classList.remove('active');
+    if (next) {
+      next.classList.add('active');
+    }
+  }, 300); // Matches the 0.3s transition
 }
+
 </script>
 
 [back](./quiz.html)
