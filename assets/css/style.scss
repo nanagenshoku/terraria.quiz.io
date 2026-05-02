@@ -18,12 +18,12 @@
   height: 100%;
   cursor: pointer;
   
-  /* 2. The Background Image Logic (Essential) */
-  background-size: cover;      /* Makes image fill the square */
-  background-position: center;  /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  /* 2. The Background Image Logic */
+  background-size: 110%;        /* Slightly larger than the box so it can move */
+  background-position: center;  /* Starts at the center */
+  background-repeat: no-repeat; 
   
-  /* 3. Text Styling (For readability over images) */
+  /* 3. Text Styling */
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -32,15 +32,13 @@
   /* 4. Aesthetics */
   border: none;
   border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.3s ease, background-size 0.3s ease; /* Smooth transition */
 }
 
 .level-card:hover {
   transform: scale(1.05);
-  background-size: 120%; /* Scale up slightly so there is "room" to move */
+  background-size: 120%; /* Zooms in slightly more on hover */
   animation: floatBg 4s ease-in-out infinite;
-
 }
 
 .level-link {
@@ -107,13 +105,13 @@
 
 @keyframes floatBg {
   0% {
-    background-position: center 50%;
+    background-position: center 50%; /* Center */
   }
   50% {
-    background-position: center 40%; /* Moves the image up slightly */
+    background-position: center 45%; /* Moves up slightly */
   }
   100% {
-    background-position: center 50%;
+    background-position: center 50%; /* Back to center */
   }
 }
 .easy {
